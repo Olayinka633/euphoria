@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+.navBar__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem 2rem;
+  align-items: center;
+  background-color: whitesmoke;
+  box-shadow: 00 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+.navBar__container > div:first-child a {
+  text-decoration: none;
+  color: inherit;
+}
+.navBar__container > div:first-child h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+  line-height: 20px;
+}
+.navBar__container > div:first-child p {
+  font-size: 1.5rem;
+  line-height: 0px;
+  font-size: 8px;
+  text-align: end;
+}
+
+.navBar__container > div:nth-child(2) ul {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+
+.navBar__container > div:nth-child(2) ul li {
+  list-style-type: none;
+}
+.navBar__container > div:nth-child(2) ul a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.5s ease-in;
+}
+
+.navBar__container > div:nth-child(2) ul a:hover {
+  color: grey;
+}
+
+.navBar__container > div:nth-child(3) form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: gainsboro;
+  padding: 0.3rem;
+  width: 200px;
+  border-radius: 0.4rem;
+  transition: all 0.5s ease-in;
+}
+
+.navBar__container > div:nth-child(3) input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  caret-color: purple;
+  width: 100%;
+}
+
+.navBar__container > div:nth-child(3) input::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+}
+.navBar__container > div:nth-child(3) form:focus-within {
+  width: 300px;
+  background-color: rgb(210, 210, 210);
+}
+
+.navBar__container > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navBar__container > div:last-child button {
+  border: none;
+  background-color: gainsboro;
+  border: 1px solid ghostwhite;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.navBar__container > div:last-child span {
+  position: absolute;
+  top: 0;
+  right: -0.5rem;
+  color: red;
+  background-color: gainsboro;
+  padding: 0.1rem 0.2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+/* Big ZOne Section */
+.bigZone__container {
+  display: flex;
+  gap: 1rem;
+}
+
+.bigZone__container > div {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.bigZone__container > div:first-child {
+  background-image: url("image/image13.jpeg");
+}
+
+.cargo {
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cargo p {
+  font-size: 14px;
+  margin: 0.5rem 0rem;
+}
+
+.cargo span {
+  font-weight: 600;
+}
+
+.icon {
+  margin-left: 1.7rem;
+}
+
+.icon svg {
+  margin: 1rem 0rem;
+}
+.cargo button {
+  border: none;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid black;
+  padding: 0.4rem 0.7rem;
+  box-shadow: 00 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in;
+}
+
+.cargo button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bigZone__container > div:last-child {
+  background-image: url("image/image12.jpeg");
+}
+
+/* ==================================== */
+/* ============================= */
+/* ========== Categories of Men ===========*/
+/* ============================= */
+/* ============================= */
+.menCloth__section {
+  padding: 1rem 4rem;
+}
+
+.menCloth__container,
+.favourite__section,
+.footer__section > div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+
+.menCloth__container > div,
+.favourite__section > div,
+.footer__section > div:first-child > div {
+  max-width: 500px;
+  flex-grow: 1;
+  flex-basis: 500;
+}
+
+.menCloth__container > div:first-child,
+.menCloth__container > div:nth-child(2),
+.menCloth__container > div:nth-child(3),
+.menCloth__container > div:last-child {
+  width: 270px;
+}
+.menCloth__container > div:first-child img,
+.menCloth__container > div:nth-child(2) img,
+.menCloth__container > div:nth-child(3) img,
+.menCloth__container > div:last-child img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.menCloth__explore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menCloth__explore p {
+  font-size: 12px;
+}
+
+/* ==================================== */
+/* ============================= */
+/* ========== Top Brand Deals ===========*/
+/* ============================= */
+/* ============================= */
+
+.top__brandDeals--wrapper {
+  padding: 1rem 4rem;
+}
+
+.top__brandDeals {
+  background-color: #3c4242;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.top__brandDeals > div:first-child {
+  text-align: center;
+}
+.top__brandDeals > div:first-child h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+.top__brandDeals > div:first-child p {
+  margin: 0.3rem 0rem 2rem;
+  color: #fff;
+  font-size: 14px;
+}
+.top__brandDeals > div:first-child p span {
+  color: #fbd103;
+}
+
+.top__brandDeals > div:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.top__brandDeals > div:last-child > div {
+  background-color: #fff;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+.top__brandDeals > div:last-child img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* ========= Favourite Section =========== */
+.favourite__section--wrapper {
+  padding: 1rem 4rem;
+}
+
+.favourite__section {
+  display: flex;
+  gap: 1rem;
+  transition: all 0.5s ease-in;
+}
+
+.favourite__container {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  width: 270px;
+
+  position: relative;
+}
+.favourite__container:hover {
+  box-shadow: 00 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.favourite__items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.6rem 0rem 0.2rem;
+  width: 100%;
+  padding: 0.4rem;
+  align-self: flex-end;
+}
+
+.favourite__items h4 {
+  font-size: 12px;
+  color: white;
+}
+.favourite__items p {
+  font-size: 9px;
+  color: white;
+}
+.favourite__items button {
+  border: none;
+  font-size: 12px;
+  border: 1px solid gainsboro;
+  padding: 0.3rem 0.5rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.favourite__items button:hover {
+  background-color: #3c4242;
+  color: white;
+}
+
+.favourite__container img {
+  width: 100%;
+  height: 260px;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.overlay__favorite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+
+  display: flex;
+  animation: scale 0.5s forwards;
+  display: none;
+}
+
+.favourite__container:hover .overlay__favorite {
+  display: inline-flex;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.7);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ================================== */
+/* ================================== */
+/* ======== Footer Section ========== */
+/* ================================== */
+/* ================================== */
+.footer__section {
+  background-color: #3c4242;
+  padding: 1rem 4rem;
+}
+
+.footer__section > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__container h4 {
+  color: #fff;
+  font-weight: 800;
+}
+
+.footer__container ul li {
+  list-style-type: none;
+}
+.footer__container ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+}
+
+/* ======= Hover Effect ========= */
+.list__item {
+  /* font-size: 17px; */
+  background: transparent;
+  border: none;
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.list__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: rgb(169, 166, 166);
+  transition: 0.5s ease;
+}
+
+.list__item:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.list__item:hover::before {
+  width: 100%;
+}
+
+.list__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.footer__socailMedia Ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__socailMedia ul a {
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  height: 40px;
+  border: 1px solid gainsboro;
+  border-radius: 0.6rem;
+  transition: all 0.5s ease-in;
+}
+
+.footer__socailMedia > ul:first-child a:hover {
+  background-color: gainsboro;
+}
+
+.footer__socailMedia {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.footer__socailMedia > div:last-child h3 {
+  color: #fff;
+  font-weight: 800;
+}
+
+.footer__socailMedia > div:last-child > div {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__socailMedia > div:last-child > div button {
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #404040;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.footer__socailMedia > div:last-child > div button p {
+  font-size: 9px;
+}
+
+.footer__socailMedia > div:last-child > div button:hover {
+  box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.footer__section > div:last-child {
+  text-align: center;
+  margin-top: 1rem;
+}
+.footer__section > div:last-child p {
+  color: #fff;
+  font-size: 12px;
+}
+
+.section_heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .menCloth__section,
+  .top__brandDeals--wrapper,
+  .favourite__section--wrapper {
+    padding: 0.7rem 2rem;
+  }
+
+  .bigZone__container {
+    flex-direction: column;
+  }
+
+  .cargo {
+    right: 2rem;
+  }
+
+  .navBar__container > div:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .menCloth__section,
+  .top__brandDeals--wrapper,
+  .favourite__section--wrapper {
+    padding: 0.7rem 0.9rem;
+  }
+
+  .section_heading {
+    font-size: 1.1rem;
+  }
+
+  .footer__section {
+    padding: 1rem 1.5rem;
+  }
+
+  .footer__socailMedia {
+    flex-direction: column;
+  }
+
+  .navBar__container > div:nth-child(3) {
+    display: none;
+  }
+}
